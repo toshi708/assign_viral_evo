@@ -8,7 +8,7 @@ def jukes_cantor(reference_sequence: str, distant_sequence: str) -> float:
     reference = reference_sequence[i]
     distant = distant_sequence[i]
 
-    if reference != "-" and distant != "-":
+    if reference in "ACGT" and distant in "ACGT":
       total += 1
 
       if reference != distant:
